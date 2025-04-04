@@ -169,10 +169,3 @@ local Button = MainTab:CreateButton({
    loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))()
    end,
 })
-
-local Button = MainTab:CreateButton({
-   Name = "Blackhole",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/Bac0nHck/Scripts/main/BringFlingPlayers"))("More Scripts: t.me/arceusxscripts")
-   end,
-})
