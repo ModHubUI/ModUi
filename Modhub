@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "ModUi v0.1",
+   Name = "ModUi v0.2",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "ModHub",
    LoadingSubtitle = "by ModForExe",
@@ -79,5 +79,43 @@ local Button = ItemsTab:CreateButton({
    Name = "AK-47",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/sinret/rbxscript.com-scripts-reuploads-/main/ak47", true))() 
+   end,
+})
+
+local GamesTab = Window:CreateTab("Games", 4483362458) -- Title, Image
+local Section = GamesTab:CreateSection("Other Games")
+
+local Button = GamesTab:CreateButton({
+   Name = "Fisch [Speed Hub X]",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+   end,
+})
+
+local Button = GamesTab:CreateButton({
+   Name = "Blox Fruits [Redz Hub]",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/newredz/BloxFruits/refs/heads/main/Source.luau"))()
+   end,
+})
+
+local Button = GamesTab:CreateButton({
+   Name = "Anime Vanguards [Speed Hub X]",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Script-Games/main/Anime%20Vanguards.lua"))()
+   end,
+})
+
+local Button = GamesTab:CreateButton({
+   Name = "Doors [Speed Hub X]",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Script-Games/main/Doors.lua"))()
+   end,
+})
+
+local Button = GamesTab:CreateButton({
+   Name = "The Strongest Battlegrounds [Speed Hub X",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
    end,
 })
