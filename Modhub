@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "ModUi v0.2",
+   Name = "ModUi v0.3",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "ModHub",
    LoadingSubtitle = "by ModForExe",
@@ -45,11 +45,19 @@ local Button = MainTab:CreateButton({
 })
 
 local Button = MainTab:CreateButton({
+   Name = "Namless Admin",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))();
+   end,
+})
+
+local Button = MainTab:CreateButton({
    Name = "Esp",
    Callback = function()
    loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))()
    end,
 })
+
 
 local ItemsTab = Window:CreateTab("Items", 4483362458) -- Title, Image
 local Section = ItemsTab:CreateSection("Items")
@@ -114,8 +122,44 @@ local Button = GamesTab:CreateButton({
 })
 
 local Button = GamesTab:CreateButton({
-   Name = "The Strongest Battlegrounds [Speed Hub X",
+   Name = "The Strongest Battlegrounds [Speed Hub X]",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
    end,
 })
+
+local Button = GamesTab:CreateButton({
+   Name = "Murder Mystery 2 [Yarhm]",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/main/yarhm.lua", false))()
+   end,
+})
+
+local Button = GamesTab:CreateButton({
+   Name = "Rivals [Tbao]",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubRivals"))()
+   end,
+})
+
+local Button = GamesTab:CreateButton({
+   Name = "Blade Ball [Funhaji]",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/funhaji/Blade-Ball/refs/heads/main/No-Lag.lua", true))()
+   end,
+})
+
+local Button = ItemsTab:CreateButton({
+   Name = "FE Seraphic Blades",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastefy.app/59mJGQGe/raw"))()
+   end,
+})
+
+local Button = GamesTab:CreateButton({
+   Name = "Brookhaven [Orbit X Ice Hub] CONTAINS KEY",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-Orbit-x-IceHub-Loads-of-features-31605"))()
+   end,
+})
+
